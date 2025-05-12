@@ -1,107 +1,70 @@
+# Getting Started with Create React App
 
-# 🔍 Opportunity Tracker
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Automatically track scholarships, internships, awards, and other programs — get predicted deadlines and receive email notifications so you never miss out again!
+## Available Scripts
 
-## ✨ Features
+In the project directory, you can run:
 
-- 🔎 **Google Search + AI Deadline Prediction**  
-  Parses program-related webpages to extract past dates and predicts upcoming deadlines.
+### `npm start`
 
-- 📧 **Email Alerts**  
-  Users receive a summary and top links in their inbox instantly.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-- 🧠 **Auto Categorization**  
-  Classifies each opportunity as Scholarship, Internship, Hackathon, Award, or Other.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-- 📊 **Google Sheets Integration**  
-  Stores all analyzed data for record-keeping and further analysis.
+### `npm test`
 
----
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## 🛠️ Tech Stack
+### `npm run build`
 
-- **Frontend:** React + Bootstrap  
-- **Backend:** FastAPI (Python)  
-- **Data Storage:** Google Sheets (via `gspread`)  
-- **Email:** Gmail SMTP  
-- **Search:** Google Custom Search API
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
----
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-## 🚀 Getting Started
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### 1. Clone the repo
-```bash
-git clone https://github.com/swastim01/opportunity-tracker.git
-cd opportunity-tracker
-````
+### `npm run eject`
 
-### 2. Set up environment variables
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-Create a `.env` file in the root and add:
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-```env
-GOOGLE_API_KEY=your_google_api_key
-CSE_ID=your_custom_search_engine_id
-EMAIL_USER=your_email@gmail.com
-EMAIL_PASS=your_app_password
-```
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-### 3. Add Google Sheets credentials
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-Place your `creds.json` (Google service account credentials) in the root folder.
+## Learn More
 
-### 4. Run the backend (FastAPI)
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-```bash
-uvicorn main:app --reload
-```
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-### 5. Start the frontend (React)
+### Code Splitting
 
-```bash
-cd frontend
-npm install
-npm start
-```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
----
+### Analyzing the Bundle Size
 
-## 📝 Example Use Case
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-1. Enter a program name like *"Adobe Women in Tech Scholarship"*
-2. Add your email.
-3. Get back:
+### Making a Progressive Web App
 
-   * Predicted deadline
-   * Top 3 links
-   * Auto-labeled type
-   * All stored to Google Sheets
-   * A summary email in your inbox 🎯
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
----
+### Advanced Configuration
 
-## 📸 Preview
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-Coming soon! (or you can add a screenshot here)
+### Deployment
 
----
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-## 📄 License
+### `npm run build` fails to minify
 
-MIT License
-
----
-
-## 💡 Future Ideas
-
-* 🔔 Reminders before actual deadlines
-* 🗓️ Calendar integration
-* 📱 Mobile-friendly UI
-* 🧠 Smarter ML-based deadline prediction
-
----
-
-Made with ❤️ by [@swastim01](https://github.com/swastim01)
-
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
